@@ -1,0 +1,29 @@
+/* 1. Mengubah latar belakang seluruh halaman dan jenis tulisan */
+body {
+    background-color: #f0f4f8; /* Warna abu-abu kebiruan yang lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tulisan modern tanpa sirip */
+    color: #333333; /* Warna teks abu-abu gelap biar nyaman dibaca */
+    padding: 20px; /* Memberi jarak dalam agar teks tidak mepet ke pinggir layar */
+}
+
+/* 2. Mengubah warna dan gaya Judul Utama (h1) */
+h1 {
+    color: #2c3e50; /* Warna biru dongker elegan */
+    border-bottom: 2px solid #3498db; /* Memberi garis bawah hiasan berwarna biru */
+    padding-bottom: 10px;
+}
+
+/* 3. Membuat tombol (button) jadi keren seperti aplikasi modern */
+button {
+    background-color: #3498db; /* Warna tombol jadi biru */
+    color: white; /* Tulisan di dalam tombol jadi putih */
+    border: none; /* Menghilangkan garis pinggir bawaan yang kaku */
+    padding: 10px 20px; /* Membuat tombol jadi lebih gemuk/besar */
+    border-radius: 5px; /* Membuat sudut tombol jadi melengkung (tidak lancip) */
+    cursor: pointer; /* Mengubah kursor mouse jadi tanda jari menunjuk saat di atas tombol */
+}
+
+/* 4. Efek saat tombol disentuh mouse (Hover) */
+button:hover {
+    background-color: #2980b9; /* Birunya berubah jadi agak gelap saat disentuh */
+}
