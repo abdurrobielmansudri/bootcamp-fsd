@@ -1,24 +1,14 @@
-// 1. Membuat kotak variabel untuk menyimpan teks (String)
-let namaPengembang = "Robi";
-let peranDasar = "Full-Stack Developer";
+// 1. Tangkap tombolnya berdasarkan id dan simpan ke dalam variabel
+let tombol = document.getElementById("tombol-baca");
+let paragraf = document.getElementById("teks-artikel");
 
-// 2. Membuat kotak variabel untuk menyimpan angka (Number)
-let targetBelajarJam = 1;
+//2. Beri tahu JS untuk "mendengarkan" kapan tombol itu di klik (event listener)
+tombol.addEventListener("click", function (){
 
-// 3. Menampilkan isi kotak variabel ke dalam "Console" browser
-console.log(namaPengembang);
-console.log(peranDasar);
-console.log(targetBelajarJam);
+    //3. Aksi : mengubah tulisan didalam tombol secara instan !
+    tombol.innerText = "Terima kasih sudah membaca!";
+    paragraf.style.color ="#7f8c8d";
 
-// 1. Menggabungkan teks (String Concatenation)
-let sapaan = "Halo, nama saya " + namaPengembang + " dan saya seorang " + peranDasar + ".";
-console.log(sapaan);
-
-// 2. Melakukan operasi matematika dasar (Aritmatika)
-let targetSeminggu = targetBelajarJam * 7; // Menghitung total jam belajar seminggu
-console.log("Target belajar saya dalam seminggu adalah: " + targetSeminggu + " jam");
-
-// 3. Mengubah isi variabel (Re-assignment)
-targetBelajarJam = 2; // Angka di dalam kotak kita ganti jadi 2
-let targetBaruSeminggu = targetBelajarJam * 7;
-console.log("Kalau target dinaikkan, seminggu jadi: " + targetBaruSeminggu + " jam");
+    //4. Bonus aksi : mengubah warna tombol menjadi abu-abu tanda sudah di klik 
+    tombol.style.backgroundColor="#7f8c8d";
+});
